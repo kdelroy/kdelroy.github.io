@@ -51,3 +51,38 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
+
+# Prose settings
+# Post metadata
+#   excerpt
+#   tags
+#   comments
+#   image {feature, credit, creditlink}
+#   link
+#   author
+prose:
+  siteurl: 'http://lymelicious.com'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "excerpt"
+        field:
+          element: "text"
+          label: "Post description"
+      - name: 'tags'
+        field:
+          element: 'multiselect'
+          options:
+            - name: 'news'
+              value: 'news'
+          alterable: 'true'
+      - name: 'comments'
+        field:
+          element: 'checkbox'
+          label: 'Enable comments?'
+          value: true
+

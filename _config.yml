@@ -1,0 +1,53 @@
+# Jekyll settings
+destination: ./_site
+username: kdelroy
+branch: source
+exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
+include: ['.travis.yml']
+
+# Site settings
+title:      Lymelicious
+locale:     en_AU
+baseurl: "http://lymelicious.com" # the base hostname & protocol for your site
+
+# Site owner
+owner:
+  name: Kathryn Delroy
+  avatar: bio-photo.png
+  bio: "Describe your self."
+  email: kd@lymelicious.com
+  disqus-shortname:
+  twitter: BorreliaBuster
+  facebook: #username
+  google:
+  plus: #username
+  analytics:
+  verify:
+  ad-client:
+  ad-slot:
+  bing-verify:
+  github: kdelroy
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
